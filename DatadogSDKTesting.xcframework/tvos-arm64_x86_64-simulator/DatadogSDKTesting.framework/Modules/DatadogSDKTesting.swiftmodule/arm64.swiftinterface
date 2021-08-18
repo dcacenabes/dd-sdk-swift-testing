@@ -1,0 +1,29 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-tvos12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DatadogSDKTesting
+import Compression
+@_exported import DatadogSDKTesting
+import Foundation
+import MachO
+import Swift
+import UIKit
+@_inheritsConvenienceInitializers @objc public class DDInstrumentationControl : ObjectiveC.NSObject {
+  @objc public static func startInjectingHeaders()
+  @objc public static func stopInjectingHeaders()
+  @objc public static func startPayloadCapture()
+  @objc public static func stopPayloadCapture()
+  @objc public static func startStdoutCapture()
+  @objc public static func stopStdoutCapture()
+  @objc public static func startStderrCapture()
+  @objc public static func stopStderrCapture()
+  public static var openTelemetryTracerSdk: Swift.AnyObject? {
+    get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers public class FrameworkLoadHandler : ObjectiveC.NSObject {
+  @objc public static func handleLoad()
+  @objc deinit
+  @objc override dynamic public init()
+}

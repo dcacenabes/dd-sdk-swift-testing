@@ -1,0 +1,11 @@
+framework module DatadogSDKTesting {
+  umbrella header "DatadogSDKTesting.h"
+
+  export *
+  module * { export * }
+}
+
+module DatadogSDKTesting.Swift {
+    header "DatadogSDKTesting-Swift.h"
+    requires objc
+}
